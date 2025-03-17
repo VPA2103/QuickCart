@@ -17,7 +17,7 @@ async function connectDB(){
             bufferCommands: false,
         }
 
-        cached.promise = mongoose.connect(`${process.env.MONGO_URI}/quick-cart-E-commerce-nextjs`, options).then((mongoose) => {
+        cached.promise = mongoose.connect(`${process.env.MONGO_URI}`, options).then((mongoose) => {
             return mongoose;
         })
 
