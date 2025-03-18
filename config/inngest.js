@@ -49,7 +49,7 @@ export const syncUserCreation = inngest.createFunction(
                 userData, 
                 { upsert: true, new: true }
             );
-
+            
             console.log("User created/updated successfully:", userData);
         } catch (error) {
             console.error("Error creating user:", error);
